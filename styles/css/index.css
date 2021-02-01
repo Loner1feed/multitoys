@@ -607,6 +607,10 @@ a {
 .card__button {
   min-width: 140px;
 }
+.card__partner {
+  min-width: 200px;
+  margin: 0px auto;
+}
 .card__labelRow {
   position: absolute;
   top: 12px;
