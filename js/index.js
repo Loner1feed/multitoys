@@ -17,17 +17,17 @@ searchButton.click(function () {
 })
 
 
-// logout user
+// user
 let personButton = $('.person__button');
-let personLogout = $('.person__logout');
 let person = $('.person');
+let personLogScreen = $('.person__logScreen');
 
 personButton.click(function () {
-    personLogout.toggleClass('person__logout--show');
+    personLogScreen.toggleClass('person__logScreen--show');
     personButton.toggleClass('roundBtn--hovered');
     $(document).mouseup(function (e) {
         if (!person.is(e.target) && person.has(e.target).length === 0) {
-            personLogout.removeClass('person__logout--show');
+            personLogScreen.removeClass('person__logScreen--show');
             personButton.removeClass('roundBtn--hovered');
         }
     });

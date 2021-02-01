@@ -350,9 +350,10 @@ a {
 .person {
   position: relative;
 }
-.person__logout {
+.person__logScreen {
   position: absolute;
   background: #ffffff;
+  z-index: 6;
   right: 0;
   width: 315px;
   border-bottom-right-radius: 30px;
@@ -362,17 +363,58 @@ a {
   box-shadow: 0px 8px 16px rgba(55, 56, 60, 0.08);
   display: none;
 }
-.person__logout--show {
+.person__logScreen-heading {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+  background: #920D62;
+  color: #ffffff;
+  font-weight: bold;
+}
+.person__logScreen-discount {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #F2F2F2;
+  margin-bottom: 5px;
+}
+.person__logScreen-discount h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.person__logScreen-link {
+  display: block;
+  padding: 8px 20px;
+}
+.person__logScreen-link:hover {
+  background: #f5f5f5;
+}
+.person__logScreen-row {
+  display: flex;
+}
+.person__logScreen-col {
+  margin-right: 20px;
+}
+.person__logScreen-col span {
+  font-size: 14px;
+}
+.person__logScreen-purple {
+  font-weight: bold;
+  color: #920D62;
+}
+.person__logScreen--show {
   display: block;
 }
-.person__logout-item {
+.person__logScreen-item {
   display: block;
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
   width: 100%;
 }
-.person__logout-item:hover {
+.person__logScreen-item:hover {
   background: #920D62;
   color: #ffffff;
 }
