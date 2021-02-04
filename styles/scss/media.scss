@@ -22,6 +22,12 @@ $red: #EF4137;
     }
 }
 
+@media screen and (max-width: 1550px){
+    .grid{
+        grid-template-columns: repeat(3, minmax(168px, 1fr));
+    }
+}
+
 @media screen and (max-width: 1350px){
     .header{
         &__phoneInfo{
@@ -58,6 +64,10 @@ $red: #EF4137;
         margin-left: 340px;
     }
 
+    .catalogBlock{
+        margin-left: 340px;
+    }
+
     .about{
         margin-left: 340px;
 
@@ -82,6 +92,12 @@ $red: #EF4137;
         }
     }
 }
+
+// @media screen and (max-width: 1220px){
+//     .grid{
+//         grid-template-columns: repeat(2, minmax(168px, 1fr));
+//     }
+// }
 
 @media screen and (max-width: 1150px){
     .catalog{
@@ -121,6 +137,18 @@ $red: #EF4137;
                     font-size: 8px;
                 }
             }
+        }
+    }
+
+    .catalogBlock{
+        margin-left: 0;
+        &__top{
+            flex-wrap: wrap;
+        }
+
+        &__crumbs{
+            width: 100%;
+            padding-bottom: 24px;
         }
     }
 
@@ -371,6 +399,19 @@ $red: #EF4137;
         }
     }
 
+    .filter__left .selectric-dropdown-group{
+        width: 155px;
+        .selectric-label{
+            font-size: 12px;
+        }
+    }
+
+    .filter{
+        &__input{
+            width: 100px;
+        }
+    }
+
     .person{
         &__logScreen{
             width: 250px;
@@ -535,11 +576,95 @@ $red: #EF4137;
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 730px){
     .catalog{
         &__heading{
             display: none;
         }
+    }
+
+    .grid{
+        grid-template-columns: repeat(2, minmax(168px, 1fr));
+    }
+
+    .catalogBlock{
+        &__top{
+            .selectric-dropdown-order{
+                display: none;
+            }
+        }
+
+        &__pages{
+            margin: 0px auto;
+        }
+    }
+
+    .filter{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__mobileLabel{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 30px;
+            max-width: 250px;
+            width: 100%;
+            padding: 12px 20px;
+            background: #FFFFFF;
+            border: 1px solid #920D62;
+            box-sizing: border-box;
+            box-shadow: 0px 8px 16px rgba(55, 56, 60, 0.08);
+            border-radius: 30px;
+            img{
+                margin-right: 8px;
+            }
+            font-size: 12px;
+
+            &:hover{
+                border-color: #ffffff;
+            }
+        }
+
+        &__mobileItem{
+            display: block;
+        }
+
+        &__body{
+            position: absolute;
+            display: none;
+            flex-direction: column;
+            background: #ffffff;
+            z-index: 10;
+            width: 100%;
+            top: calc(100% + 5px);
+            box-shadow: 0px 8px 16px rgba(55, 56, 60, 0.08);
+            right: 0;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            &--show{
+                display: flex;
+            }
+        }
+
+        &__left{
+            flex-direction: column;
+            align-items: flex-start;
+            .selectric-dropdown-group{
+                margin-left: 0;
+                max-width: 100%;
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+    }
+
+    .arrow{
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .wrap{
@@ -1043,7 +1168,58 @@ $red: #EF4137;
         }
     }
 
-    
+    .catalogBlock{
+        &__wrap{
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+    }
+
+    .filter{
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        background: transparent;
+        &__mobileItem{
+            max-width: 170px;
+            width: 100%;
+            .selectric{
+                padding-top: 12px;
+                padding-bottom: 12px;
+                padding-left: 10px;
+                background: #ffffff;
+                .btn{
+                    right: 10px;
+                    font-size: 6px;
+                }
+
+                .label{
+                    font-size: 12px;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &__mobileLabel{
+            max-width: 170px;
+            margin-left: 8px;
+        }
+    }
+
+    .pages{
+        &__item{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            height: 33px;
+            min-width: 50px;
+            width: 50px;
+        }
+
+        &__button{
+            line-height: 3px;
+        }
+    }
 
     .amount{
         height: 24px;

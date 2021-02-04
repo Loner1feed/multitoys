@@ -71,14 +71,14 @@ let catalogItemShowThird = 'catalog__item--showThird';
 let children;
 let children2;
 
-function catalogShow(click_item, first, second, addClass, childrenVar){
-    click_item.click(function(){
+function catalogShow(click_item, first, second, addClass, childrenVar) {
+    click_item.click(function () {
 
         childrenVar = $(this).children('.catalog__item-body');
         childrenVar.addClass(addClass);
         first.removeClass('catalog__back--show');
 
-        second.addClass('catalog__back--show').click(function(){
+        second.addClass('catalog__back--show').click(function () {
             childrenVar.removeClass(addClass);
             first.addClass('catalog__back--show');
             second.removeClass('catalog__back--show');
@@ -109,8 +109,7 @@ $('#slider-1 .sliderBlock__grid--splitted').slick({
     dots: true,
     nextArrow: '<a href="javascript://" class="sliderBlock__arrow sliderBlock__arrow-next"><span class="icon-chevron"></span></a>',
     prevArrow: '<a href="javascript://" class="sliderBlock__arrow sliderBlock__arrow-prev"><span class="icon-chevron"></span></a>',
-    responsive: [
-        {
+    responsive: [{
             breakpoint: 1570,
             settings: {
                 slidesToShow: 3,
@@ -149,7 +148,7 @@ $('#slider-1 .sliderBlock__grid--splitted').slick({
 let slider3 = $('#slider-3');
 let slider2 = $('#slider-2');
 
-function slider(item){
+function slider(item) {
     item.find('.sliderBlock__grid').slick({
         appendArrows: item.find('.sliderBlock__arrows'),
         appendDots: item.find('.sliderBlock__dots'),
@@ -158,28 +157,27 @@ function slider(item){
         dots: true,
         nextArrow: '<a href="javascript://" class="sliderBlock__arrow sliderBlock__arrow-next"><span class="icon-chevron"></span></a>',
         prevArrow: '<a href="javascript://" class="sliderBlock__arrow sliderBlock__arrow-prev"><span class="icon-chevron"></span></a>',
-        responsive: [
-            {
+        responsive: [{
                 breakpoint: 1450,
                 settings: {
                     slidesToShow: 4
                 }
             },
-    
+
             {
                 breakpoint: 1170,
                 settings: {
                     slidesToShow: 3
                 }
             },
-    
+
             {
                 breakpoint: 790,
                 settings: {
                     slidesToShow: 2
                 }
             },
-    
+
             {
                 breakpoint: 550,
                 settings: "unslick"
@@ -188,6 +186,27 @@ function slider(item){
     });
 }
 
-slider(slider2);
+$(document).ready(function(){
+    slider(slider2);
 
-slider(slider3);
+    slider(slider3);
+
+
+    $('.language').selectric();
+
+    $('.dropdown-order').selectric();
+
+    $('.dropdown-group').selectric();
+})
+
+let filter = $('.filter');
+let filterBody = $('.filter__body')
+
+$('.filter__mobileLabel').click(function(){
+    $('.filter__body').toggleClass('filter__body--show');
+    $(document).mouseup(function (e) {
+        if (!filter.is(e.target) && filter.has(e.target).length === 0) {
+            filterBody.removeClass('filter__body--show');
+        }
+    });
+})
