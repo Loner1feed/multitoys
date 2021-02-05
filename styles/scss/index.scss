@@ -495,7 +495,7 @@ a {
 
 // about
 .about {
-    margin-left: 412px;
+     
 
     &__wrap {
         padding-left: 0;
@@ -577,7 +577,7 @@ a {
 // sliderblock
 .sliderBlock {
     &--splitted {
-        margin-left: 412px;
+        
 
         .sliderBlock__wrap {
             padding-left: 0;
@@ -1170,9 +1170,13 @@ a {
     }
 }
 
+.margin{
+    margin-left: 412px;
+}
+
 // catalog block
 .catalogBlock{
-    margin-left: 412px;
+     
     &__top{
         display: flex;
         justify-content: space-between;
@@ -1445,6 +1449,33 @@ a {
     .selectric-items{
         border-bottom-right-radius: 30px;
         border-bottom-left-radius: 30px;
+    }
+}
+
+.results{
+    &__wrap{
+        padding-top: 20px;
+    }
+
+    &__crumbs{
+        padding-bottom: 20px;
+    }
+
+    &__pages{
+        padding-top: 20px;
+        padding-bottom: 10px;
+        justify-content: center;
+    }
+
+    &__headRow{
+        align-items: flex-end;
+    }
+
+    &__label{
+        font-size: 18px;
+        line-height: 20px;
+        color: #BDBDBD;
+        min-width: max-content;
     }
 }
 

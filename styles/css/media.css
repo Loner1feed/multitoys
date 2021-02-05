@@ -41,17 +41,10 @@
     padding: 40px 50px;
   }
 
-  .sliderBlock--splitted {
+  .margin {
     margin-left: 340px;
   }
 
-  .catalogBlock {
-    margin-left: 340px;
-  }
-
-  .about {
-    margin-left: 340px;
-  }
   .about__list:first-child {
     margin-right: 20px;
   }
@@ -99,9 +92,6 @@
     font-size: 8px;
   }
 
-  .catalogBlock {
-    margin-left: 0;
-  }
   .catalogBlock__top {
     flex-wrap: wrap;
   }
@@ -133,9 +123,6 @@
     font-size: 26px;
   }
 
-  .sliderBlock--splitted {
-    margin-left: 0px;
-  }
   .sliderBlock--splitted .sliderBlock__wrap {
     padding-left: 20px;
   }
@@ -213,9 +200,6 @@
     font-size: 16px;
   }
 
-  .about {
-    margin-left: 0;
-  }
   .about__wrap {
     padding-left: 20px;
   }
@@ -250,6 +234,14 @@
   .footer__phoneRow-icon {
     font-size: 32px;
   }
+
+  .margin {
+    margin-left: 0;
+  }
+
+  .results__title {
+    font-size: 32px;
+  }
 }
 @media screen and (max-width: 900px) {
   .catalog__heading-label {
@@ -265,6 +257,14 @@
   }
   .catalog__body {
     max-width: 220px;
+  }
+
+  .arrow__button {
+    height: 50px;
+    width: 50px;
+  }
+  .arrow__button span {
+    font-size: 8px;
   }
 
   .header__leftButtons {
@@ -867,8 +867,26 @@
   .about__headRow .headRow__title {
     margin: 0px auto;
   }
+
+  .results__headRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .results__title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 550px) {
+  .results__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .results__headRow {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
   .header__search-input input {
     font-size: 14px;
     padding: 12px 15px;
@@ -936,6 +954,18 @@
   .card:hover .card__link-hover {
     display: inline-block;
     margin-right: auto;
+  }
+
+  .arrow__button {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 15px;
+  }
+  .arrow__button span {
+    font-size: 6px;
+  }
+  .arrow__button__label {
+    font-size: 12px;
   }
 
   .catalogBlock__wrap {
