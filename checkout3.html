@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/css/reset.css">
+    <link rel="stylesheet" href="./styles/css/fonts.css">
+    <link rel="stylesheet" href="./plugins/slick/slick.css">
+    <link rel="stylesheet" href="./plugins/select/selectric.css">
+    <link rel="stylesheet" href="./styles/css/index.css">
+    <link rel="stylesheet" href="./styles/css/media.css">
+    <link rel="stylesheet" href="./styles/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="content">
+        <!-- header -->
+        <header class="header header--checkout">
+            <div class="wrap header__wrap">
+
+                <!-- language switcher -->
+                <select class="language">
+                    <option value="ru">RU</option>
+                    <option value="en">EN</option>
+                    <option value="ua">UA</option>
+                </select>
+
+                <!-- logo -->
+                <a href="javascript://" class="header__logo">
+                    <img src="./img/logo.png" alt="">
+                </a>
+
+                <div class="header__phoneInfo-item">
+                    <span class="icon-phone-round"></span>
+                    <div class="header__phoneInfo-body">
+                        <span>099-592-20-21 <img src="./img/svg/viber.svg" alt=""> </span>
+                        <span>050-592-20-21</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+
+        <div class="checkout">
+            <div class="wrap checkout__wrap">
+                <h2 class="title checkout__title">
+                    Оформление заказа
+                </h2>
+
+                <div class="checkout__optBlock">
+                    <h5 class="checkout__heading">
+                        Выбор способа доставки
+                    </h5>
+
+                    <div class="checkout__optRow">
+                        <div class="checkout__radio">
+                            <input type="radio" name="check-opt" id="opt1" checked>
+                            <label for="opt1">Самовывоз из склада</label>
+                        </div>
+
+                        <div class="checkout__radio">
+                            <input type="radio" name="check-opt" id="opt2">
+                            <label for="opt2">Новая Почта</label>
+                        </div>
+
+                        <div class="checkout__radio">
+                            <input type="radio" name="check-opt" id="opt3">
+                            <label for="opt3">Доставка компанией мультитойс</label>
+                        </div>
+                    </div>
+
+                    <div class="checkout__optBlock-nav">
+                        <a href="javascript://" class="checkout__optBlock-link checkout__optBlock-link--active">У меня есть файлы</a>
+                        <a href="javascript://" class="checkout__optBlock-link">У меня есть данные</a>
+                    </div>
+
+                    <div class="checkout__option">
+
+                        <form action="" class="checkoutForm">
+                            <h5 class="checkoutForm__heading">Получатель</h5>
+
+                            <div class="checkoutForm__row">
+                                <div class="checkoutForm__item checkoutForm__item--required">
+                                    <span class="checkoutForm__item-label">Ваша фамилия</span>
+                                    <input type="text">
+                                </div>
+
+                                <div class="checkoutForm__item checkoutForm__item--required">
+                                    <span class="checkoutForm__item-label">Ваше имя</span>
+                                    <input type="text">
+                                </div>
+
+                                <div class="checkoutForm__item">
+                                    <span class="checkoutForm__item-label">Ваше отчество</span>
+                                    <input type="text">
+                                </div>
+
+                                <div class="checkoutForm__item checkoutForm__item--required">
+                                    <span class="checkoutForm__item-label">Телефон</span>
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <div class="checkoutForm__opt">
+                                <div class="checkout__radio">
+                                    <input type="radio" name="checkForm-opt" id="form-opt1" checked>
+                                    <label for="form-opt1">Отделение Новой почты</label>
+                                </div>
+
+                                <div class="checkout__radio">
+                                    <input type="radio" name="checkForm-opt" id="form-opt2">
+                                    <label for="form-opt2">Адресная доставка</label>
+                                </div>
+                            </div>
+
+                            <div class="checkoutForm__row">
+                                <div class="checkoutForm__item">
+                                    <span class="checkoutForm__item-label">Область</span>
+                                    <select class="checkoutForm__select" name="checkForm-select1" id="checkForm-select1">
+                                        <option value="val1">-- Виберите город--</option>
+                                        <option value="val2">opt1</option>
+                                        <option value="val3">opt2</option>
+                                    </select>
+                                </div>
+
+                                <div class="checkoutForm__item">
+                                    <span class="checkoutForm__item-label">Город</span>
+                                    <select class="checkoutForm__select" name="checkForm-select2" id="checkForm-select2">
+                                        <option value="val1">-- Виберите город--</option>
+                                        <option value="val2">opt1</option>
+                                        <option value="val3">opt2</option>
+                                    </select>
+                                </div>
+
+                                <div class="checkoutForm__item">
+                                    <span class="checkoutForm__item-label">Выберите отделение</span>
+                                    <select class="checkoutForm__select" name="checkForm-select3" id="checkForm-select3">
+                                        <option value="val1">-- Виберите город--</option>
+                                        <option value="val2">opt1</option>
+                                        <option value="val3">opt2</option>
+                                    </select>
+                                </div>
+
+                                <div class="checkoutForm__item">
+                                    <span class="checkoutForm__item-label">Сумма наложенного платежа, грн.</span>
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <h5 class="checkoutForm__heading">Кто платит за доставку</h5>
+
+                            <div class="checkoutForm__opt">
+                                <div class="checkout__radio">
+                                    <input type="radio" name="checkForm-opt2" id="form-opt3">
+                                    <label for="form-opt3">Оплата получателя</label>
+                                </div>
+
+                                <div class="checkout__radio">
+                                    <input type="radio" name="checkForm-opt2" id="form-opt4" checked>
+                                    <label for="form-opt4">Оплата отправителя</label>
+                                </div>
+                            </div>
+
+                            <div class="checkoutForm__row">
+                                <div class="checkoutForm__item">
+                                    <span class="checkoutForm__item-label">Ширина, см</span>
+                                    <input type="text">
+                                </div>
+
+                                <div class="checkoutForm__item">
+                                    <span class="checkoutForm__item-label">Высота, см</span>
+                                    <input type="text">
+                                </div>
+
+                                <div class="checkoutForm__item">
+                                    <span class="checkoutForm__item-label">Длинна, см</span>
+                                    <input type="text">
+                                </div>
+
+                                <div class="checkoutForm__item">
+                                    <span class="checkoutForm__item-label">Вес, кг</span>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </form>
+
+                        
+                    </div>
+
+
+                </div>
+
+                <div class="checkout__nav">
+                    <a href="javascript://" class="checkout__link">Продолжить покупки</a>
+                    <a href="javascript://" class="checkout__link">Вернуться в корзину</a>
+                </div>
+
+                <a href="javascript://" class="button checkout__submit">Заказ подтверждаю</a>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="wrap footer__wrap">
+
+                <div class="footer__left">
+                    <div class="footer__col">
+                        <span class="icon-location footer__icon"></span>
+
+                        <span class="footer__text">
+                            г. Киев, ул.Шевченко, 117А
+                        </span>
+                    </div>
+
+                    <div class="footer__col">
+                        <span class="icon-clock footer__icon"></span>
+
+                        <span class="footer__text">
+                            пн-пт: 10:00 - 19:00 <br>
+                            сб: 10:00 - 18:00 <br>
+                            вс: выходной
+                        </span>
+                    </div>
+
+                </div>
+
+                <a href="javascript://" class="footer__logo">
+                    <img src="./img/logo.png" alt="">
+                </a>
+
+                <div class="footer__right">
+
+                    <div class="footer__phoneRow">
+                        <span class="footer__phone">
+                            <span class="icon-phone-round footer__phoneRow-icon"></span>
+                            099-592-20-21
+                            <img src="./img/svg/viber.svg" alt="">
+                        </span>
+
+                        <span class="footer__phone">
+                            050-592-20-21
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- footer end -->
+    </div>
+
+
+
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./plugins/slick/slick.min.js"></script>
+    <script src="./plugins/select/jquery.selectric.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

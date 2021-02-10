@@ -14,6 +14,25 @@
   .grid {
     grid-template-columns: repeat(3, minmax(168px, 1fr));
   }
+
+  .itemCard__body {
+    flex-wrap: wrap;
+  }
+  .itemCard__desc {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .itemCard__split {
+    max-width: 100%;
+  }
+  .itemCard__infoBlock {
+    max-width: 60%;
+    margin-right: 0;
+  }
+  .itemCard__slider {
+    max-width: 40%;
+  }
 }
 @media screen and (max-width: 1350px) {
   .header__phoneInfo {
@@ -100,6 +119,13 @@
     padding-bottom: 24px;
   }
 
+  .header--checkout .header__wrap {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .header--checkout .header__logo {
+    max-width: 50px;
+  }
   .header__info {
     max-width: 150px;
   }
@@ -444,6 +470,47 @@
     font-size: 28px;
     margin-right: 5px;
   }
+
+  .itemCard__row {
+    justify-content: space-between;
+    max-width: 350px;
+    width: 100%;
+  }
+  .itemCard__button {
+    margin-left: 0;
+  }
+  .itemCard__purple {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+  .itemCard__infoBlock {
+    min-width: 300px;
+  }
+
+  .files {
+    justify-content: space-between;
+    padding-bottom: 0px;
+  }
+  .files__item-heading {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  .files__item-input label {
+    padding: 12px 44px;
+    max-width: 175px;
+    font-size: 12px;
+    margin-right: 12px;
+  }
+  .files__item-input span {
+    font-size: 12px;
+  }
+
+  .checkout__optBlock {
+    padding-bottom: 10px;
+  }
+  .checkout__address {
+    padding-bottom: 0;
+  }
 }
 @media screen and (max-width: 730px) {
   .catalog__heading {
@@ -459,6 +526,14 @@
   }
   .catalogBlock__pages {
     margin: 0px auto;
+  }
+
+  .checkoutForm__heading {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .checkoutForm__item {
+    max-width: 100%;
   }
 
   .filter {
@@ -876,6 +951,90 @@
     font-size: 28px;
     margin-bottom: 20px;
   }
+
+  .itemCard__wrap {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .itemCard__button {
+    max-width: 150px;
+    font-size: 16px;
+  }
+  .itemCard__slider {
+    min-width: 250px;
+  }
+  .itemCard__row {
+    max-width: 300px;
+  }
+  .itemCard__price-new {
+    font-size: 20px;
+  }
+  .itemCard__price-old {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .itemCard__infoBlock {
+    margin-left: 10px;
+    min-width: 280px;
+  }
+  .itemCard__desc {
+    margin-top: 10px;
+  }
+  .itemCard__amount {
+    height: 30px;
+    max-width: 130px;
+  }
+  .itemCard__purple {
+    font-size: 12px;
+  }
+  .itemCard__comment {
+    height: 90px;
+  }
+  .itemCard__heading {
+    font-size: 12px;
+  }
+  .itemCard__crumbs .crumbs__item:nth-child(5),
+.itemCard__crumbs .crumbs__separator:nth-child(4) {
+    display: none;
+  }
+  .itemCard__crumbs .crumbs__item:nth-child(3) {
+    color: #BDBDBD;
+  }
+  .itemCard__crumbs .crumbs__item:nth-child(3):hover {
+    text-decoration: none;
+  }
+
+  .checkout__heading {
+    font-size: 16px;
+  }
+  .checkout__radio {
+    font-size: 14px;
+  }
+  .checkout__submit {
+    font-size: 16px;
+    max-width: 380px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .checkout__address .selectric-checkoutForm__select .selectric .label {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .itemCard__split {
+    flex-direction: column;
+  }
+  .itemCard__infoBlock {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .itemCard__slider {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 550px) {
   .results__title {
@@ -890,6 +1049,18 @@
   .header__search-input input {
     font-size: 14px;
     padding: 12px 15px;
+  }
+  .header--checkout .header__wrap {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header--checkout .selectric-language {
+    margin-right: 20px;
+  }
+  .header--checkout .header__logo {
+    position: relative;
+    margin: 0;
+    margin-right: auto;
   }
 
   .person__logout {
@@ -1084,5 +1255,45 @@
   }
   .footer__phoneRow-icon {
     font-size: 20px;
+  }
+
+  .checkout__wrap {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .checkout__optBlock {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .checkout__optRow .checkout__radio:nth-child(2) {
+    margin: 0px 15px;
+  }
+  .checkout__radio {
+    font-size: 11px;
+  }
+  .checkout__nav {
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+  .checkout__link {
+    font-size: 14px;
+  }
+  .checkout__address-button {
+    max-width: 100%;
+  }
+  .checkout__address .selectric-checkoutForm__select {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .checkoutForm__opt {
+    max-width: 300px;
+    margin: 0px auto;
+    justify-content: space-between;
+  }
+  .checkoutForm__opt .checkout__radio {
+    margin: 0;
   }
 }

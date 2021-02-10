@@ -197,6 +197,14 @@ $(document).ready(function(){
     $('.dropdown-order').selectric();
 
     $('.dropdown-group').selectric();
+
+    $('#checkForm-select1').selectric();
+
+    $('#checkForm-select2').selectric();
+
+    $('#checkForm-select3').selectric();
+
+    $('#check-address').selectric();
 })
 
 let filter = $('.filter');

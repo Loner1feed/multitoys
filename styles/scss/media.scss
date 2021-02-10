@@ -26,6 +26,31 @@ $red: #EF4137;
     .grid{
         grid-template-columns: repeat(3, minmax(168px, 1fr));
     }
+
+    .itemCard{
+        &__body{
+            flex-wrap: wrap;
+        }
+
+        &__desc{
+            max-width: 100%;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        &__split{
+            max-width: 100%;
+        }
+
+        &__infoBlock{
+            max-width: 60%;
+            margin-right: 0;
+        }
+
+        &__slider{
+            max-width: 40%;
+        }
+    }
 }
 
 @media screen and (max-width: 1350px){
@@ -84,6 +109,8 @@ $red: #EF4137;
             }
         }
     }
+
+    
 }
 
 // @media screen and (max-width: 1220px){
@@ -145,6 +172,19 @@ $red: #EF4137;
     }
 
     .header{
+
+        &--checkout{
+
+            .header__wrap{
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .header__logo{
+                max-width: 50px;
+            }
+        }
+
         &__info{
             max-width: 150px;
             &-label{
@@ -583,6 +623,61 @@ $red: #EF4137;
             }
         }
     }
+
+    .itemCard{
+        &__row{
+            justify-content: space-between;
+            max-width: 350px;
+            width: 100%;
+        }
+
+        &__button{
+            margin-left: 0;
+        }
+
+        &__purple{
+            margin-right: 20px;
+            margin-left: 0;
+        }
+
+        &__infoBlock{
+            min-width: 300px;
+        }
+    }
+
+    .files{
+        justify-content: space-between;
+        padding-bottom: 0px;
+        &__item{
+
+            &-heading{
+                font-size: 12px;
+                margin-bottom: 12px;
+            }
+
+            &-input{
+                label{
+                    padding: 12px 44px;
+                    max-width: 175px;
+                    font-size: 12px;
+                    margin-right: 12px;
+                }
+                span{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .checkout{
+        &__optBlock{
+            padding-bottom: 10px;
+        }
+
+        &__address{
+            padding-bottom: 0;
+        }
+    }
 }
 
 @media screen and (max-width: 730px){
@@ -608,7 +703,18 @@ $red: #EF4137;
         }
     }
 
-    
+    .checkoutForm{
+        &__heading{
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+        
+        &__item{
+            max-width: 100%;
+        }
+
+        
+    }
 
     .filter{
         position: relative;
@@ -1094,6 +1200,123 @@ $red: #EF4137;
             margin-bottom: 20px;
         }
     }
+
+    .itemCard{
+        &__wrap{
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        &__button{
+            max-width: 150px;
+            font-size: 16px;
+        }
+
+        &__slider{
+            min-width: 250px;
+        }
+
+        &__row{
+            max-width: 300px;
+        }
+
+        &__price{
+            &-new{
+                font-size: 20px;
+            }
+
+            &-old{
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+        }
+
+        &__infoBlock{
+            margin-left: 10px;
+            min-width: 280px;
+        }
+
+        &__desc{
+            margin-top: 10px;
+        }
+
+        &__amount{
+            height: 30px;
+            max-width: 130px;
+        }
+
+        &__purple{
+            font-size: 12px;
+        }
+
+        &__comment{
+            height: 90px;
+        }
+
+        &__heading{
+            font-size: 12px;
+        }
+
+        &__crumbs{
+            .crumbs__item:nth-child(5),
+            .crumbs__separator:nth-child(4){
+                display: none;
+            }
+            .crumbs__item:nth-child(3){
+                color: #BDBDBD;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .checkout{
+        &__heading{
+            font-size: 16px;
+        }
+
+        &__radio{
+            font-size: 14px;
+        }
+
+        &__submit{
+            font-size: 16px;
+            max-width: 380px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        &__address{
+            .selectric-checkoutForm__select{
+                .selectric .label{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .itemCard{
+        &__split{
+            flex-direction: column;
+        }
+
+        &__infoBlock{
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            margin-left: 0;
+            max-width: 100%;
+        }
+
+        &__slider{
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            max-width: 100%;
+        }
+    }
 }
 
 @media screen and (max-width: 550px){
@@ -1117,6 +1340,24 @@ $red: #EF4137;
                     font-size: 14px;
                     padding: 12px 15px;
                 }
+            }
+        }
+
+        &--checkout{
+
+            .header__wrap{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .selectric-language{
+                margin-right: 20px;
+            }
+
+            .header__logo{
+                position: relative;
+                margin: 0;
+                margin-right: auto;
             }
         }
     }
@@ -1363,4 +1604,62 @@ $red: #EF4137;
             }
         }
     }
+
+    .checkout{ 
+
+        &__wrap{
+            padding-top: 30px;
+            padding-bottom: 40px;
+        }
+
+        &__optBlock{
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        &__optRow{
+            .checkout__radio:nth-child(2){
+                margin: 0px 15px;
+            }
+        }
+
+        &__radio{
+            font-size: 11px;
+        }
+
+        &__nav{
+            padding-top: 30px;
+            padding-bottom: 25px;
+        }
+
+        &__link{
+            font-size: 14px;
+        }
+
+        &__address{
+
+            &-button{
+                max-width: 100%;
+            }
+
+            .selectric-checkoutForm__select{
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    .checkoutForm{
+        &__opt{
+            max-width: 300px;
+            margin: 0px auto;
+            justify-content: space-between;
+            .checkout__radio{
+                margin: 0;
+            }
+        }
+    }
+
 }
