@@ -40,6 +40,14 @@
   .checkoutForm__split .checkoutForm__item {
     max-width: 100%;
   }
+
+  .personal__nav {
+    order: 3;
+  }
+  .personal__discountRow {
+    order: 2;
+    max-width: 280px;
+  }
 }
 @media screen and (max-width: 1350px) {
   .header__phoneInfo {
@@ -274,6 +282,10 @@
 
   .results__title {
     font-size: 32px;
+  }
+
+  .personal__password-button {
+    height: 57px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -543,6 +555,15 @@
   }
   .checkout__sum {
     margin-bottom: 25px;
+  }
+
+  .personal__nav {
+    flex-wrap: wrap;
+    max-width: 100%;
+    font-size: 14px;
+  }
+  .personal__link {
+    margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 730px) {
@@ -1052,6 +1073,10 @@
   .checkout__address .selectric-checkoutForm__select .selectric .label {
     font-size: 14px;
   }
+
+  .personal__discountRow {
+    padding-top: 0;
+  }
 }
 @media screen and (max-width: 600px) {
   .itemCard__split {
@@ -1339,5 +1364,39 @@
   }
   .checkoutForm__opt .checkout__radio {
     margin: 0;
+  }
+
+  .personal__wrap {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .personal__body {
+    margin-right: -10px;
+    margin-left: -10px;
+    border-radius: 0;
+    box-shadow: unset;
+  }
+  .personal__password {
+    padding-right: 10px;
+    padding-left: 10px;
+    grid-row-gap: 30px;
+  }
+  .personal__link {
+    margin-right: 20px;
+    font-size: 12px;
+  }
+  .personal__nav {
+    padding-top: 20px;
+  }
+  .personal__headRow {
+    padding-top: 10px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .personal__title {
+    margin-bottom: 15px;
+  }
+  .personal__password-button {
+    max-width: 100%;
   }
 }

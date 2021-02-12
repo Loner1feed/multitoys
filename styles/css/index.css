@@ -1703,3 +1703,113 @@ a {
 .checkoutForm__opt .checkout__radio {
   margin: 0px 30px;
 }
+
+.personal__wrap {
+  padding-top: 20px;
+}
+.personal__title {
+  margin-right: 20px;
+}
+.personal__link {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #828282;
+  margin-right: 30px;
+}
+.personal__link:last-child {
+  margin-right: 0;
+}
+.personal__link--active {
+  color: #333333;
+  font-weight: bold;
+}
+.personal__link:hover {
+  color: #333;
+}
+.personal__headRow {
+  flex-wrap: wrap;
+}
+.personal__nav {
+  padding-top: 15px;
+  max-width: 715px;
+  width: 100%;
+  display: flex;
+}
+.personal__body {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 16px rgba(55, 56, 60, 0.08);
+  border-radius: 20px;
+}
+.personal__input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.personal__input-label {
+  font-size: 16px;
+  line-height: 18px;
+  color: #485860;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+.personal__input--required .personal__input-label:after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+}
+.personal__input input {
+  width: 100%;
+  padding: 20px 30px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 60px;
+}
+.personal__input input:focus {
+  border-color: #000;
+}
+.personal__password {
+  padding: 40px 45px;
+  max-width: 1120px;
+  display: grid;
+  align-items: flex-end;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+}
+.personal__password-button {
+  max-width: 250px;
+  background: #920D62;
+  color: #fff;
+  max-height: 57px;
+}
+.personal__password-button:hover {
+  background: #fff;
+  color: #920D62;
+}
+
+.discountRow {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-top: 20px;
+}
+.discountRow h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+.discountRow__right {
+  display: flex;
+}
+.discountRow__purple {
+  font-weight: bold;
+  color: #920D62;
+}
+.discountRow__item {
+  font-size: 14px;
+}
+.discountRow__item:first-child {
+  margin-right: 12px;
+}
