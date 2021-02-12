@@ -565,6 +565,10 @@
   .personal__link {
     margin-bottom: 15px;
   }
+  .personal__xml-item {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
 }
 @media screen and (max-width: 730px) {
   .catalog__heading {
@@ -1076,6 +1080,11 @@
 
   .personal__discountRow {
     padding-top: 0;
+  }
+  .personal__xml-item {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 16px;
   }
 }
 @media screen and (max-width: 600px) {

@@ -1788,6 +1788,25 @@ a {
   background: #fff;
   color: #920D62;
 }
+.personal__xml {
+  padding: 30px;
+}
+.personal__xml-item {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+}
+.personal__xml-item:hover {
+  text-decoration: underline;
+}
+.personal__xml-item span {
+  color: #920D62;
+}
+.personal__xml-item:last-child {
+  margin-bottom: 0;
+}
 
 .discountRow {
   display: flex;

@@ -2143,6 +2143,29 @@ a {
             }
         }
     }
+
+    &__xml{
+        padding: 30px;
+        &-item{
+            display: block;
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 24px;
+            color: #333333;
+
+            &:hover{
+                text-decoration: underline;
+            }
+
+            span{
+                color: $purple;
+            }
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 .discountRow{

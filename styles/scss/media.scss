@@ -755,6 +755,13 @@ $red: #EF4137;
         &__link{
             margin-bottom: 15px;
         }
+
+        &__xml{
+            &-item{
+                font-size: 16px;
+                margin-bottom: 24px;
+            }
+        }
     }
 }
 
@@ -1377,6 +1384,14 @@ $red: #EF4137;
     .personal{
         &__discountRow{
             padding-top: 0;
+        }
+
+        &__xml{
+            &-item{
+                font-size: 14px;
+                margin-bottom: 20px;
+                line-height: 16px;
+            }
         }
     }
     
