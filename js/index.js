@@ -204,6 +204,10 @@ $(document).ready(function(){
 
     $('#checkForm-select3').selectric();
 
+    $('#checkForm-select4').selectric();
+
+    $('#checkForm-select5').selectric();
+
     $('#check-address').selectric();
 })
 

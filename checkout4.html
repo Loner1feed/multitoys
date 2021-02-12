@@ -75,8 +75,8 @@
                     </div>
 
                     <div class="checkout__optBlock-nav">
-                        <a href="javascript://" class="checkout__optBlock-link checkout__optBlock-link--active">У меня есть файлы</a>
-                        <a href="javascript://" class="checkout__optBlock-link">У меня есть данные</a>
+                        <a href="javascript://" class="checkout__optBlock-link">У меня есть файлы</a>
+                        <a href="javascript://" class="checkout__optBlock-link checkout__optBlock-link--active">У меня есть данные</a>
                     </div>
 
                     <div class="checkout__option">
@@ -108,21 +108,21 @@
 
                             <div class="checkoutForm__opt">
                                 <div class="checkout__radio">
-                                    <input type="radio" name="checkForm-opt" id="form-opt1" checked>
+                                    <input type="radio" name="checkForm-opt" id="form-opt1">
                                     <label for="form-opt1">Отделение Новой почты</label>
                                 </div>
 
                                 <div class="checkout__radio">
-                                    <input type="radio" name="checkForm-opt" id="form-opt2">
+                                    <input type="radio" name="checkForm-opt" id="form-opt2" checked>
                                     <label for="form-opt2">Адресная доставка</label>
                                 </div>
                             </div>
 
-                            <div class="checkoutForm__row">
+                            <div class="checkoutForm__row checkoutForm__row--address">
                                 <div class="checkoutForm__item">
-                                    <span class="checkoutForm__item-label">Область</span>
-                                    <select class="checkoutForm__select" name="checkForm-select1" id="checkForm-select1">
-                                        <option value="val1">-- Виберите область--</option>
+                                    <span class="checkoutForm__item-label">Район</span>
+                                    <select class="checkoutForm__select" name="checkForm-select4" id="checkForm-select4">
+                                        <option value="val1">-- Виберите район--</option>
                                         <option value="val2">opt1</option>
                                         <option value="val3">opt2</option>
                                     </select>
@@ -130,7 +130,7 @@
 
                                 <div class="checkoutForm__item">
                                     <span class="checkoutForm__item-label">Город</span>
-                                    <select class="checkoutForm__select" name="checkForm-select2" id="checkForm-select2">
+                                    <select class="checkoutForm__select" name="checkForm-select5" id="checkForm-select5">
                                         <option value="val1">-- Виберите город--</option>
                                         <option value="val2">opt1</option>
                                         <option value="val3">opt2</option>
@@ -138,12 +138,20 @@
                                 </div>
 
                                 <div class="checkoutForm__item">
-                                    <span class="checkoutForm__item-label">Выберите отделение</span>
-                                    <select class="checkoutForm__select" name="checkForm-select3" id="checkForm-select3">
-                                        <option value="val1">-- Виберите город--</option>
-                                        <option value="val2">opt1</option>
-                                        <option value="val3">opt2</option>
-                                    </select>
+                                    <span class="checkoutForm__item-label">Улица</span>
+                                    <input type="text">
+                                </div>
+
+                                <div class="checkoutForm__split">
+                                    <div class="checkoutForm__item">
+                                        <span class="checkoutForm__item-label">Дом</span>
+                                        <input type="text">
+                                    </div>
+
+                                    <div class="checkoutForm__item">
+                                        <span class="checkoutForm__item-label">Квартира</span>
+                                        <input type="text">
+                                    </div>
                                 </div>
 
                                 <div class="checkoutForm__item">

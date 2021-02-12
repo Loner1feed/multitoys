@@ -1806,6 +1806,75 @@ a {
             border-radius: 60px;
         }
     }
+
+    &__check{
+        width: 100px;
+        height: 100px;
+        background: #F2F2F2;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        color: $purple;
+        margin: 0px auto;
+        margin-bottom: 40px;
+    }
+
+    &__end{
+        padding-top: 40px;
+        padding-bottom: 0px;
+        max-width: 680px;
+        margin: 0px auto;
+
+        &-button{
+            max-width: 250px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 18px;
+            display: flex;
+            margin: 0px auto;
+            color: #FFFFFF;
+            background: $purple;
+            &:hover{
+                background: #fff;
+                color: $purple;
+            }
+        }
+
+        &-heading{
+            font-weight: normal;
+            font-size: 32px;
+            line-height: 120%;
+            color: #000000;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        &-subheading{
+            font-size: 18px;
+            line-height: 140%;
+            text-align: center;
+            color: #828282;
+            margin-bottom: 35px;
+        }
+    }
+
+    &__sum{
+        margin-bottom: 25px;
+        font-size: 18px;
+        text-align: center;
+        line-height: 140%;
+        color: #333333;
+        b{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 100%;
+            text-align: right;
+            color: #920D62;
+            margin-left: 15px;
+        }
+    }
 }
 
 .files{
@@ -1886,6 +1955,12 @@ a {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 20px;
         margin-bottom: 40px;
+        &--address{
+            grid-template-columns: repeat(5, auto);
+            .checkoutForm__item{
+                min-width: 265px;
+            }
+        }
     }
 
     &__item{
@@ -1925,6 +2000,18 @@ a {
             border-radius: 60px;
             &:focus{
                 border-color: #000;
+            }
+        }
+    }
+
+    &__split{
+        display: flex;
+        min-width: 250px;
+        .checkoutForm__item{
+            min-width: 0;
+            max-width: 120px;
+            &:first-child{
+                margin-right: 15px;
             }
         }
     }
