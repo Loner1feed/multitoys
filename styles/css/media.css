@@ -92,6 +92,21 @@
   .about__block--small .about__list {
     margin-right: 0;
   }
+
+  .data__body-address {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 20px;
+  }
+  .data__body-address .personal__input {
+    max-width: 100%;
+  }
+  .data__addressRow {
+    grid-column: span 2;
+  }
+  .data__addressRow .personal__input--mini {
+    max-width: 100px;
+  }
 }
 @media screen and (max-width: 1150px) {
   .catalog {
@@ -285,6 +300,13 @@
   }
 
   .personal__password-button {
+    height: 57px;
+  }
+
+  .data__addressButton {
+    height: 57px;
+  }
+  .data__button {
     height: 57px;
   }
 }
@@ -568,6 +590,37 @@
   .personal__xml-item {
     font-size: 16px;
     margin-bottom: 24px;
+  }
+
+  .data {
+    padding: 20px;
+  }
+  .data__body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    grid-column-gap: 15px;
+  }
+  .data .personal__input {
+    max-width: 100%;
+    margin: 0;
+  }
+  .data .personal__input--mini {
+    max-width: 100px;
+    margin-right: 10px;
+  }
+  .data__date {
+    max-width: 420px;
+    margin-top: 0;
+  }
+  .data__date .selectric-data__select {
+    margin-right: 5px;
+  }
+  .data__date .selectric-data__select .selectric .label {
+    font-size: 14px;
+  }
+  .data__subheading {
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 730px) {
@@ -1086,6 +1139,11 @@
     margin-bottom: 20px;
     line-height: 16px;
   }
+
+  .data__addressRow {
+    grid-column: span 1;
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 600px) {
   .itemCard__split {
@@ -1407,5 +1465,39 @@
   }
   .personal__password-button {
     max-width: 100%;
+  }
+
+  .data {
+    padding: 20px 15px;
+  }
+  .data .personal__input {
+    min-width: 200px;
+  }
+  .data .personal__input--mini {
+    min-width: 0;
+    max-width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  .data .personal__input input {
+    padding: 13px 20px;
+  }
+  .data__date .selectric-data__select {
+    height: 43px;
+  }
+  .data__addressButton {
+    height: 43px;
+    max-width: calc(100% - 40px);
+    margin: 0px auto;
+  }
+  .data__addressRow {
+    flex-wrap: wrap;
+  }
+  .data__addressRow .personal__input {
+    width: 100%;
+  }
+  .data__button {
+    max-width: 100%;
+    height: 43px;
+    margin-top: 25px;
   }
 }

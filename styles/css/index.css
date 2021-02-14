@@ -1751,7 +1751,6 @@ a {
   line-height: 18px;
   color: #485860;
   margin-bottom: 10px;
-  margin-left: 15px;
 }
 .personal__input--required .personal__input-label:after {
   content: "*";
@@ -1806,6 +1805,109 @@ a {
 }
 .personal__xml-item:last-child {
   margin-bottom: 0;
+}
+
+.data {
+  padding: 30px 40px;
+}
+.data__heading {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.data__addressButton {
+  color: #000;
+  max-width: 250px;
+  max-height: 57px;
+  margin-top: 20px;
+  font-size: 14px;
+  border-width: 2px;
+}
+.data__block {
+  margin-bottom: 40px;
+}
+.data__block:nth-child(2) {
+  margin-bottom: 0;
+}
+.data__subBlock {
+  margin-bottom: 40px;
+}
+.data__subBlock:last-child {
+  margin-bottom: 0;
+}
+.data__addressRow {
+  display: flex;
+  max-width: 530px;
+  width: 100%;
+}
+.data__button {
+  max-width: 250px;
+  margin-top: 40px;
+  background: #920D62;
+  color: #fff;
+}
+.data__button:hover {
+  background: #fff;
+  color: #920D62;
+}
+.data__body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.data__body .personal__input {
+  max-width: 320px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.data__body .personal__input--mini {
+  max-width: 85px;
+}
+.data__body-address {
+  display: flex;
+  flex-wrap: wrap;
+}
+.data__date {
+  margin-top: 20px;
+}
+.data__date-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+.data .selectric-data__select {
+  width: 100%;
+  margin-right: 10px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 60px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.data .selectric-data__select .selectric {
+  width: 100%;
+}
+.data .selectric-data__select .selectric .icon-chevron {
+  font-size: 6px;
+}
+.data .selectric-data__select:focus {
+  border-color: #000;
+}
+.data .selectric-data__select:last-child {
+  margin-right: 0;
+}
+.data .selectric-data-select-day {
+  max-width: 105px;
+}
+.data .selectric-data-select-month {
+  max-width: 165px;
+}
+.data .selectric-data-select-year {
+  max-width: 130px;
 }
 
 .discountRow {

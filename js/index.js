@@ -209,6 +209,12 @@ $(document).ready(function(){
     $('#checkForm-select5').selectric();
 
     $('#check-address').selectric();
+
+    $('.data-select-day').selectric();
+
+    $('.data-select-month').selectric();
+
+    $('.data-select-year').selectric();
 })
 
 let filter = $('.filter');

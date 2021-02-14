@@ -135,7 +135,25 @@ $red: #EF4137;
         }
     }
 
-    
+    .data{
+        &__body{
+            &-address{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                grid-gap: 20px;
+                .personal__input{
+                    max-width: 100%;
+                }
+            }
+        }
+
+        &__addressRow{
+            grid-column: span 2;
+            .personal__input--mini{
+                max-width: 100px;
+            }
+        }
+    }
 }
 
 // @media screen and (max-width: 1220px){
@@ -389,6 +407,16 @@ $red: #EF4137;
             &-button{
                 height: 57px;
             }
+        }
+    }
+
+    .data{
+        &__addressButton{
+            height: 57px;
+        }
+
+        &__button{
+            height: 57px;
         }
     }
     
@@ -761,6 +789,40 @@ $red: #EF4137;
                 font-size: 16px;
                 margin-bottom: 24px;
             }
+        }
+    }
+
+    .data{
+        padding: 20px;
+        &__body{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            grid-column-gap: 15px;
+        }
+
+        .personal__input{
+            max-width: 100%;
+            margin: 0;
+            &--mini{
+                max-width: 100px;
+                margin-right: 10px;
+            }
+        }
+
+        &__date{
+            max-width: 420px;
+            margin-top: 0;
+            .selectric-data__select{
+                margin-right: 5px;
+                .selectric .label{
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &__subheading{
+            margin-bottom: 10px;
         }
     }
 }
@@ -1394,6 +1456,13 @@ $red: #EF4137;
             }
         }
     }
+
+    .data{
+        &__addressRow{
+            grid-column: span 1;
+            max-width: 100%;
+        }
+    }
     
 }
 
@@ -1818,6 +1887,46 @@ $red: #EF4137;
             &-button{
                 max-width: 100%;
             }
+        }
+    }
+
+    .data{
+        padding: 20px 15px;
+        .personal__input{
+            min-width: 200px;
+            &--mini{
+                min-width: 0;
+                max-width: calc(50% - 10px);
+                margin-bottom: 20px;
+            }
+            input{
+                padding: 13px 20px;
+            }
+        }
+
+        &__date{
+            .selectric-data__select{
+                height: 43px;
+            }
+        }
+
+        &__addressButton{
+            height: 43px;
+            max-width: calc(100% - 40px);
+            margin: 0px auto;
+        }
+
+        &__addressRow{
+            flex-wrap: wrap;
+            .personal__input{
+                width: 100%;
+            }
+        }
+
+        &__button{
+            max-width: 100%;
+            height: 43px;
+            margin-top: 25px;
         }
     }
 
