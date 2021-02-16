@@ -299,12 +299,12 @@
 
                         <div class="headRow personal__headRow">
                             <h2 class="title personal__title">
-                                Сменить пароль
+                                История заказов
                             </h2>
 
                             <div class="personal__nav">
-                                <a href="./personal-data.html" class="personal__link personal__link--active">Личные данные</a>
-                                <a href="./personal-history.html" class="personal__link">История заказов</a>
+                                <a href="./personal-data.html" class="personal__link">Личные данные</a>
+                                <a href="./personal-history.html" class="personal__link personal__link--active">История заказов</a>
                                 <a href="./personal-password.html" class="personal__link">Сменить пароль</a>
                                 <a href="./personal-xml.html" class="personal__link">Экспорт товаров в XML</a>
                                 <a href="javascript://" class="personal__link">Выйти</a>
@@ -328,160 +328,326 @@
 
                         <div class="personal__body">
                             
-                            <form class="data personal__data">
-                                <div class="data__block">
-
-                                    <h5 class="data__heading">Контактные данные</h5>
-
-                                    <div class="data__body">
-                                        <div class="personal__input">
-                                            <span class="personal__input-label">Имя</span>
-                                            <input type="text">
-                                        </div>
-    
-                                        <div class="personal__input">
-                                            <span class="personal__input-label">Фамилия</span>
-                                            <input type="text">
-                                        </div>
-    
-                                        <div class="personal__input">
-                                            <span class="personal__input-label">Отчество</span>
-                                            <input type="text">
-                                        </div>
-    
-                                        <div class="personal__input">
-                                            <span class="personal__input-label">Телефон</span>
-                                            <input type="text">
-                                        </div>
-    
-                                        <div class="personal__input">
-                                            <span class="personal__input-label">Email</span>
-                                            <input type="text">
-                                        </div>
-    
-                                        <div class="data__date">
-
-                                            <span class="personal__input-label">Дата рождения</span>
-    
-                                            <div class="data__date-body">
-                                                <select class="data__select data-select-day">
-                                                    <option value="val1">20</option>
-                                                    <option value="val1">21</option>
-                                                    <option value="val1">22</option>
-                                                </select>
-        
-                                                <select class="data__select data-select-month">
-                                                    <option value="val1">Березня</option>
-                                                    <option value="val1">val2</option>
-                                                    <option value="val1">val3</option>
-                                                </select>
-        
-                                                <select class="data__select data-select-year">
-                                                    <option value="val1">1875</option>
-                                                    <option value="val1">1876</option>
-                                                    <option value="val1">1877</option>
-                                                </select>
-                                            </div>
-    
-                                        </div>
-                                    </div>
-
+                            <div class="history personal__history">
+                                <div class="history__labelRow">
+                                    <span class="history__label">№ заказа</span>
+                                    <span class="history__label">Дата заказа</span>
+                                    <span class="history__label">Статус</span>
+                                    <span class="history__label history--hide">№ ТТН</span>
+                                    <span class="history__label history--hide">Количество</span>
+                                    <span class="history__label">Общая сумма</span>
+                                    <div class="history__thumb"></div>
                                 </div>
 
-                                <div class="data__block">
-                                    <h5 class="data__heading">Адресные данные</h5>
+                                <div class="history__item">
+                                    <div class="history__heading">
+                                        <div class="history__heading-col">
+                                            <span class="history__label">№ заказа</span>
+                                            5534534
+                                        </div>
 
-                                    <div class="data__subBlock">
+                                        <div class="history__heading-col">
+                                            <span class="history__label">Дата заказа</span>
+                                            01.12.2020
+                                        </div>
 
-                                        <h6 class="data__subheading">
-                                            Адрес 1
-                                        </h6>
+                                        <div class="history__heading-col">
+                                            <span class="history__label">Статус</span>
+                                            Отгружен
+                                        </div>
 
-                                        <div class="data__body data__body-address">
-                                            
-                                            <div class="personal__input">
-                                                <span class="personal__input-label">Область</span>
-                                                <input type="text">
-                                            </div>
+                                        <div class="history__heading-col history--hide">
+                                            <span class="history__label history--hide">№ ТТН</span>
+                                            234235453456546345344
+                                        </div>
 
-                                            <div class="personal__input">
-                                                <span class="personal__input-label">Город</span>
-                                                <input type="text">
-                                            </div>
+                                        <div class="history__heading-col history--hide">
+                                            <span class="history__label history--hide">Количество</span>
+                                            12
+                                        </div>
 
-                                            <div class="personal__input">
-                                                <span class="personal__input-label">Улица</span>
-                                                <input type="text">
-                                            </div>
-
-                                            <div class="data__addressRow">
-                                                <div class="personal__input personal__input--mini">
-                                                    <span class="personal__input-label">Дом</span>
-                                                    <input type="text">
-                                                </div>
-
-                                                <div class="personal__input personal__input--mini">
-                                                    <span class="personal__input-label">Квартира</span>
-                                                    <input type="text">
-                                                </div>
-
-                                                <div class="personal__input">
-                                                    <span class="personal__input-label">Название торговой точки</span>
-                                                    <input type="text">
-                                                </div>
-                                            </div>
-
+                                        <div class="history__heading-col">
+                                            <span class="history__label">Общая сумма</span>
+                                            31 598 грн.
+                                        </div>
+                                        
+    
+                                        <div class="history__heading-arrow">
+                                            <span class="icon-chevron"></span>
+                                            <img src="./img/svg/arrow-right-solid.svg" alt="">
                                         </div>
                                     </div>
+    
+                                    <div class="history__body">
 
-                                    <div class="data__subBlock">
-
-                                        <h6 class="data__subheading">
-                                            Адрес 1
-                                        </h6>
-
-                                        <div class="data__body data__body-address">
-                                            
-                                            <div class="personal__input">
-                                                <span class="personal__input-label">Область</span>
-                                                <input type="text">
-                                            </div>
-
-                                            <div class="personal__input">
-                                                <span class="personal__input-label">Город</span>
-                                                <input type="text">
-                                            </div>
-
-                                            <div class="personal__input">
-                                                <span class="personal__input-label">Улица</span>
-                                                <input type="text">
-                                            </div>
-
-                                            <div class="data__addressRow">
-                                                <div class="personal__input personal__input--mini">
-                                                    <span class="personal__input-label">Дом</span>
-                                                    <input type="text">
-                                                </div>
-
-                                                <div class="personal__input personal__input--mini">
-                                                    <span class="personal__input-label">Квартира</span>
-                                                    <input type="text">
-                                                </div>
-
-                                                <div class="personal__input">
-                                                    <span class="personal__input-label">Название торговой точки</span>
-                                                    <input type="text">
-                                                </div>
-                                            </div>
-
-                                            <a href="javascript://" class="button data__addressButton">+ Добавить еще адрес</a>
-
+                                        <div class="history__body-back">
+                                            <span class="icon-chevron"></span> Назад
                                         </div>
+
+                                        <div class="history__body-top">
+                                            <div class="history__sum-item">
+                                                <span class="history__sum-gray">Дата заказа</span>
+                                                <div class="history__sum-separator"></div>
+                                                <span class="history__sum-black">10.10.20</span>
+                                            </div>
+
+                                            <div class="history__sum-item">
+                                                <span class="history__sum-gray">№ заказа</span>
+                                                <div class="history__sum-separator"></div>
+                                                <span class="history__sum-black">5534534</span>
+                                            </div>
+
+                                            <div class="history__sum-item">
+                                                <span class="history__sum-gray">Статус</span>
+                                                <div class="history__sum-separator"></div>
+                                                <span class="history__sum-black">В ожидании</span>
+                                            </div>
+
+                                            <div class="history__sum-item">
+                                                <span class="history__sum-gray">№ ТТН</span>
+                                                <div class="history__sum-separator"></div>
+                                                <span class="history__sum-black">234235453456546345344</span>
+                                            </div>
+                                        </div>
+    
+                                        <div class="history__body-item">
+    
+                                            <div class="history__item-col">
+                                                <span class="history__item-headLabel">Наименование</span>
+    
+                                                <div class="history__item-body">
+                                                    <img src="./img/item-img.png" alt="">
+                                                    <span>Інтерактивна іграшка "Фербі" муз. зі світл., кор.31*22,4*14см /48</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="history__item-col">
+                                                <span class="history__item-headLabel">Артикул</span>
+    
+                                                <div class="history__item-body">
+                                                    <span class="history__item-label">ghj-57867-22-ghnc</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="history__item-col">
+                                                <span class="history__item-headLabel">Заказано</span>
+    
+                                                <div class="history__item-body">
+                                                    <span>2</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="history__item-col history--hide">
+                                                <span class="history__item-headLabel">Отгружено</span>
+    
+                                                <div class="history__item-body">
+                                                    <span>2</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="history__item-col history--hide">
+                                                <span class="history__item-headLabel">Цена</span>
+    
+                                                <div class="history__item-body">
+                                                    <span class="history__purple">15 750 грн.</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="history__item-col">
+                                                <span class="history__item-headLabel">Сумма</span>
+    
+                                                <div class="history__item-body">
+                                                    <span class="history__purple">31 500 грн</span>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="history__sum">
+                                            <div class="history__sum-item">
+                                                <span class="history__sum-gray">Способ доставки:</span>
+                                                <div class="history__sum-separator"></div>
+                                                <span class="history__sum-black">Новая почта</span>
+                                            </div>
+
+                                            <div class="history__sum-item">
+                                                <span class="history__sum-gray">Сумма</span>
+                                                <div class="history__sum-separator"></div>
+                                                <span class="history__sum-black">440 грн.</span>
+                                            </div>
+
+                                            <div class="history__sum-item history__sum-item--mobile">
+                                                <span class="history__sum-gray">Общее количество</span>
+                                                <div class="history__sum-separator"></div>
+                                                <span class="history__sum-bold">4 товара</span>
+                                            </div>
+
+                                            <div class="history__sum-item history__sum-item--mobile">
+                                                <span class="history__sum-gray">Общая сумма</span>
+                                                <div class="history__sum-separator"></div>
+                                                <span class="history__sum-bold">111 211 грн.</span>
+                                            </div>
+                                        </div>
+    
                                     </div>
                                 </div>
 
-                                <a href="javascript://" class="button data__button">сохранить</a>
-                            </form>
+                                <div class="history__item">
+                                    <div class="history__heading">
+                                        <div class="history__heading-col">
+                                            <span class="history__label">№ заказа</span>
+                                            5534534
+                                        </div>
+
+                                        <div class="history__heading-col">
+                                            <span class="history__label">Дата заказа</span>
+                                            01.12.2020
+                                        </div>
+
+                                        <div class="history__heading-col">
+                                            <span class="history__label">Статус</span>
+                                            Отгружен
+                                        </div>
+
+                                        <div class="history__heading-col history--hide">
+                                            <span class="history__label history--hide">№ ТТН</span>
+                                            234235453456546345344
+                                        </div>
+
+                                        <div class="history__heading-col history--hide">
+                                            <span class="history__label history--hide">Количество</span>
+                                            12
+                                        </div>
+
+                                        <div class="history__heading-col">
+                                            <span class="history__label">Общая сумма</span>
+                                            31 598 грн.
+                                        </div>
+                                        
+    
+                                        <div class="history__heading-arrow">
+                                            <span class="icon-chevron"></span>
+                                            <img src="./img/svg/arrow-right-solid.svg" alt="">
+                                        </div>
+                                    </div>
+    
+                                    <div class="history__body">
+
+                                        <div class="history__body-back">
+                                            <span class="icon-chevron"></span> Назад
+                                        </div>
+
+                                        <div class="history__body-top">
+                                            <div class="history__sum-item">
+                                                <span class="history__sum-gray">Дата заказа</span>
+                                                <div class="history__sum-separator"></div>
+                                                <span class="history__sum-black">10.10.20</span>
+                                            </div>
+
+                                            <div class="history__sum-item">
+                                                <span class="history__sum-gray">№ заказа</span>
+                                                <div class="history__sum-separator"></div>
+                                                <span class="history__sum-black">5534534</span>
+                                            </div>
+
+                                            <div class="history__sum-item">
+                                                <span class="history__sum-gray">Статус</span>
+                                                <div class="history__sum-separator"></div>
+                                                <span class="history__sum-black">В ожидании</span>
+                                            </div>
+
+                                            <div class="history__sum-item">
+                                                <span class="history__sum-gray">№ ТТН</span>
+                                                <div class="history__sum-separator"></div>
+                                                <span class="history__sum-black">234235453456546345344</span>
+                                            </div>
+                                        </div>
+    
+                                        <div class="history__body-item">
+    
+                                            <div class="history__item-col">
+                                                <span class="history__item-headLabel">Наименование</span>
+    
+                                                <div class="history__item-body">
+                                                    <img src="./img/item-img.png" alt="">
+                                                    <span>Інтерактивна іграшка "Фербі" муз. зі світл., кор.31*22,4*14см /48</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="history__item-col">
+                                                <span class="history__item-headLabel">Артикул</span>
+    
+                                                <div class="history__item-body">
+                                                    <span class="history__item-label">ghj-57867-22-ghnc</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="history__item-col">
+                                                <span class="history__item-headLabel">Заказано</span>
+    
+                                                <div class="history__item-body">
+                                                    <span>2</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="history__item-col history--hide">
+                                                <span class="history__item-headLabel">Отгружено</span>
+    
+                                                <div class="history__item-body">
+                                                    <span>2</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="history__item-col history--hide">
+                                                <span class="history__item-headLabel">Цена</span>
+    
+                                                <div class="history__item-body">
+                                                    <span class="history__purple">15 750 грн.</span>
+                                                </div>
+                                            </div>
+    
+                                            <div class="history__item-col">
+                                                <span class="history__item-headLabel">Сумма</span>
+    
+                                                <div class="history__item-body">
+                                                    <span class="history__purple">31 500 грн</span>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="history__sum">
+                                            <div class="history__sum-item">
+                                                <span class="history__sum-gray">Способ доставки:</span>
+                                                <div class="history__sum-separator"></div>
+                                                <span class="history__sum-black">Новая почта</span>
+                                            </div>
+
+                                            <div class="history__sum-item">
+                                                <span class="history__sum-gray">Сумма</span>
+                                                <div class="history__sum-separator"></div>
+                                                <span class="history__sum-black">440 грн.</span>
+                                            </div>
+
+                                            <div class="history__sum-item history__sum-item--mobile">
+                                                <span class="history__sum-gray">Общее количество</span>
+                                                <div class="history__sum-separator"></div>
+                                                <span class="history__sum-bold">4 товара</span>
+                                            </div>
+
+                                            <div class="history__sum-item history__sum-item--mobile">
+                                                <span class="history__sum-gray">Общая сумма</span>
+                                                <div class="history__sum-separator"></div>
+                                                <span class="history__sum-bold">111 211228 грн.</span>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            
                             
                         </div>
 

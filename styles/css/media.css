@@ -107,6 +107,13 @@
   .data__addressRow .personal__input--mini {
     max-width: 100px;
   }
+
+  .history__body-item {
+    margin-left: 0;
+  }
+  .history__item-col:nth-child(1) {
+    max-width: 350px;
+  }
 }
 @media screen and (max-width: 1150px) {
   .catalog {
@@ -621,6 +628,27 @@
   }
   .data__subheading {
     margin-bottom: 10px;
+  }
+
+  .history__item-col span {
+    font-size: 12px;
+  }
+  .history__item-col img {
+    max-width: 35px;
+    margin-right: 12px;
+  }
+  .history__heading-col {
+    font-size: 12px;
+  }
+  .history__heading-col:nth-child(4) {
+    min-width: 150px;
+    max-width: 200px;
+  }
+  .history__label {
+    font-size: 12px;
+  }
+  .history__label:nth-child(4) {
+    min-width: 150px;
   }
 }
 @media screen and (max-width: 730px) {
@@ -1144,6 +1172,13 @@
     grid-column: span 1;
     max-width: 100%;
   }
+
+  .history--hide {
+    display: none;
+  }
+  .history__item-col:nth-child(1) {
+    max-width: 300px;
+  }
 }
 @media screen and (max-width: 600px) {
   .itemCard__split {
@@ -1499,5 +1534,151 @@
     max-width: 100%;
     height: 43px;
     margin-top: 25px;
+  }
+
+  .history__body {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background: #fff;
+  }
+  .history__body-top {
+    display: block;
+    background: #F2F2F2;
+  }
+  .history__body-top .history__sum-item {
+    display: flex;
+  }
+  .history__body-back {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .history__body-back span {
+    display: block;
+    max-width: 20px;
+    font-size: 6px;
+    margin-right: 10px;
+    transform: rotate(90deg);
+  }
+  .history__body-item {
+    flex-wrap: wrap;
+    padding-left: 15px;
+    margin-right: 0;
+    padding-right: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .history__body-item:nth-child(3) .history__item-headLabel {
+    display: none;
+  }
+  .history__labelRow {
+    display: none;
+  }
+  .history__heading {
+    border-radius: 0;
+    background: #fff;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .history__heading-col:after {
+    display: none;
+  }
+  .history__heading-col .history__label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .history__heading-arrow span {
+    display: none;
+  }
+  .history__heading-arrow img {
+    display: block;
+    max-width: 15px;
+  }
+  .history__sum-item {
+    display: none;
+  }
+  .history__sum-item--mobile {
+    display: flex;
+  }
+  .history__sum-gray {
+    font-size: 12px;
+  }
+  .history__sum-black {
+    font-size: 14px;
+  }
+  .history__sum-bold {
+    font-size: 14px;
+  }
+  .history__item-headLabel {
+    display: none;
+  }
+  .history__item-col {
+    min-width: 0;
+  }
+  .history__item-col span.history__item-label {
+    font-size: 11px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .history__item-col:nth-child(1) {
+    max-width: 230px;
+    grid-column: span 3;
+    order: 1;
+  }
+  .history__item-col:nth-child(1) img {
+    max-width: 30px;
+    margin-right: 10px;
+  }
+  .history__item-col:nth-child(2) {
+    max-width: 97px;
+    min-width: -webkit-max-content;
+    min-width: max-content;
+    order: 2;
+  }
+  .history__item-col:nth-child(3) {
+    display: flex;
+    max-width: 60px;
+    order: 4;
+  }
+  .history__item-col:nth-child(3) .history__item-headLabel {
+    display: block;
+  }
+  .history__item-col:nth-child(4) {
+    display: flex;
+    max-width: 60px;
+    order: 5;
+  }
+  .history__item-col:nth-child(4) .history__item-headLabel {
+    display: block;
+  }
+  .history__item-col:nth-child(5) {
+    display: block;
+    max-width: 60px;
+    min-width: 0;
+    order: 3;
+  }
+  .history__item-col:nth-child(5) .history__purple {
+    color: #000;
+    font-weight: normal;
+  }
+  .history__item-col:nth-child(6) {
+    display: block;
+    min-width: 0;
+    max-width: 70px;
+    order: 6;
+  }
+  .history__item-col:nth-child(6) .history__purple {
+    color: #000;
+  }
+  .history__item-label {
+    font-size: 11px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }

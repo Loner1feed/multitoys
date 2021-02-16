@@ -228,3 +228,11 @@ $('.filter__mobileLabel').click(function(){
         }
     });
 })
+
+
+$('.history__heading').click(function(){
+    $(this).parent().toggleClass('history__item--open');
+    $('.history__body-back').click(function(){
+        $('.history__item--open').removeClass('history__item--open');
+    })
+})
