@@ -316,6 +316,10 @@
   .data__button {
     height: 57px;
   }
+
+  .popup__button {
+    height: 50px;
+  }
 }
 @media screen and (max-width: 900px) {
   .catalog__heading-label {
@@ -649,6 +653,79 @@
   }
   .history__label:nth-child(4) {
     min-width: 150px;
+  }
+
+  .popup {
+    max-width: 375px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    padding-top: 50px;
+    border-radius: 20px;
+  }
+  .popup__title {
+    margin-bottom: 25px;
+  }
+  .popup__nav-dotted {
+    font-weight: bold;
+    border-bottom-style: solid;
+    font-size: 18px;
+    color: #333333;
+  }
+  .popup__alterBlock-body span {
+    font-size: 24px;
+  }
+  .popup__alterBlock-body span:last-child {
+    font-size: 14px;
+  }
+  .popup__button {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .popup__title {
+    font-size: 24px;
+  }
+  .popup__title--thin {
+    margin-bottom: 10px;
+  }
+  .popup__subtitle {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  .popup__close {
+    top: 12px;
+    right: 12px;
+  }
+  .popup__input {
+    margin-bottom: 10px;
+  }
+  .popup__register .popup__inputBlock {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .popup__register .popup__button {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .popup .checkout__check {
+    margin-bottom: 20px;
+  }
+  .popup__reset2 .popup__button {
+    margin-bottom: 0;
+  }
+  .popup__callback .popup__button {
+    margin-bottom: 0;
+  }
+  .popup__check {
+    margin-top: 5px;
+  }
+  .popup__check label {
+    font-size: 12px;
+  }
+
+  .popups__wrap {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
   }
 }
 @media screen and (max-width: 730px) {
@@ -1195,6 +1272,29 @@
     border-bottom-left-radius: 0;
     max-width: 100%;
   }
+
+  .slider {
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-gap: 10px;
+  }
+  .slider > div:first-child {
+    display: flex;
+    flex-direction: column;
+  }
+  .slider__arrows {
+    order: 3;
+    margin-top: auto;
+  }
+  .slider__bottom {
+    order: 2;
+  }
+  .slider__bottom .slick-list {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 550px) {
   .results__title {
@@ -1680,5 +1780,22 @@
     font-size: 11px;
     padding-right: 0;
     padding-left: 0;
+  }
+
+  .slider {
+    grid-template-columns: 78% 22%;
+  }
+
+  .popup {
+    border-radius: 0;
+  }
+
+  .popups {
+    padding-top: 0;
+  }
+  .popups__wrap {
+    padding-top: 0;
+    place-items: unset;
+    justify-content: center;
   }
 }

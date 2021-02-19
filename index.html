@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- styles -->
-    <link rel="stylesheet" href="./styles/css/reset.css">
-    <link rel="stylesheet" href="./styles/css/fonts.css">
-    <link rel="stylesheet" href="./plugins/slick/slick.css">
-    <link rel="stylesheet" href="./plugins/select/selectric.css">
-    <link rel="stylesheet" href="./styles/css/index.css">
-    <link rel="stylesheet" href="./styles/css/media.css">
-    <link rel="stylesheet" href="./styles/css/style.css">
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- slick -->
+        <link rel="stylesheet" href="./plugins/slick/slick.css">
+        <!-- select -->
+        <link rel="stylesheet" href="./plugins/select/selectric.css">
+        <!-- lightbox -->
+        <link rel="stylesheet" href="./plugins/lightbox/lightbox.min.css">
+        <!-- styles -->
+        <link rel="stylesheet" href="./styles/css/reset.css">
+        <link rel="stylesheet" href="./styles/css/fonts.css">
+        <link rel="stylesheet" href="./styles/css/index.css">
+        <link rel="stylesheet" href="./styles/css/media.css">
+        <link rel="stylesheet" href="./styles/css/style.css">
+    
+    </head>
 
 <body>
 
@@ -104,7 +108,7 @@
                             <div class="header__phoneInfo-item">
                                 <span class="icon-phone-round"></span>
                                 <div class="header__phoneInfo-body">
-                                    <a href="javascript://">Позвонить нам</a>
+                                    <a href="javascript://" onclick="popupCallback();">Позвонить нам</a>
                                 </div>
                             </div>
                         </div>
@@ -142,11 +146,13 @@
 
                                     <!-- logout -->
                                     <div class="person__logScreen">
-                                        <a href="javascript://" class="person__logScreen-item">
+                                        <!-- POPUP LOGIN -->
+                                        <a href="javascript://" class="person__logScreen-item" onclick="popupLogin();">
                                             Войти в личный кабинет
                                         </a>
 
-                                        <a href="javascript://" class="person__logScreen-item">
+                                        <!-- POPUP REGISTER -->
+                                        <a href="javascript://" class="person__logScreen-item" onclick="popupRegister();">
                                             Зарегистрироваться
                                         </a>
                                     </div>
@@ -2713,9 +2719,200 @@
 
     </div>
 
+    <div class="popups">
+        <div class="wrap popups__wrap">
+
+            <div class="popup popup__register">
+                <a href="javascript://" class="popup__close" onclick="popupsClose();">
+                    <span class="icon-times-solid"></span>
+                </a>
+
+                <h2 class="popup__title">
+                    Реєстрація
+                </h2>
+
+                <form action="" class="popup__form">
+                    
+                    <div class="popup__inputBlock">
+                        <div class="popup__input">
+                            <span class="popup__input-label">Фамилия</span>
+                            <input type="text">
+                        </div>
+    
+                        <div class="popup__input popup__input--required">
+                            <span class="popup__input-label">Ім’я</span>
+                            <input type="text">
+                        </div>
+    
+                        <div class="popup__input popup__input--required">
+                            <span class="popup__input-label">Телефон</span>
+                            <input type="text">
+                        </div>
+    
+                        <div class="popup__input popup__input--required">
+                            <span class="popup__input-label">Email</span>
+                            <input type="text">
+                        </div>
+    
+                        <div class="popup__input popup__input--required">
+                            <span class="popup__input-label">Пароль</span>
+                            <input type="text">
+                        </div>
+    
+                        <div class="popup__input popup__input--required">
+                            <span class="popup__input-label">Повторіть пароль</span>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="popup__check">
+                        <input type="checkbox" name="pegisterCheck" id="pegisterCheck">
+                        <label for="pegisterCheck">Я погоджуюся з користувацькою угодою и політикою конфіденційності</label>
+                    </div>
+
+                    <a href="javascript://" class="button popup__button" onclick="popupsClose();">Реєстрація</a>
+                    
+
+                </form>
+
+                <div class="popup__nav">
+                    <span class="popup__nav-label">Я вже зареєстрований</span>
+                    <a href="javascript://" class="popup__nav-link" onclick="popupLogin();">Увійти</a>
+                </div>
+            </div>
+
+            <div class="popup popup__login">
+                <a href="javascript://" class="popup__close" onclick="popupsClose();">
+                    <span class="icon-times-solid"></span>
+                </a>
+
+                <h2 class="popup__title">
+                    Вхід особістий кабінет
+                </h2>
+
+                <form action="" class="popup__form">
+                    
+                    <div class="popup__inputBlock">
+                        <div class="popup__input popup__input--required">
+                            <span class="popup__input-label">Email aбо Ім’я</span>
+                            <input type="text">
+                        </div>
+    
+                        <div class="popup__input popup__input--required">
+                            <span class="popup__input-label">Пароль</span>
+                            <input type="text">
+                            <a href="javascript://" class="popup__input-link" onclick="popupReset1();">Забули пароль?</a>
+                        </div>
+                    </div>
+
+                    <a href="javascript://" class="button popup__button" onclick="popupsClose();">Увійти</a>
+                    
+
+                </form>
+
+                <div class="popup__nav">
+                    <span class="popup__nav-label">Немає профілю?</span>
+                    <a href="javascript://" class="popup__nav-dotted" onclick="popupRegister();">Зареєструватися</a>
+                </div>
+
+                <div class="poopup__alterBlock">
+                    <div class="popup__alterBlock-heading"> <i></i> <span>Увійти як користувач</span> <i></i> </div>
+
+                    <div class="popup__alterBlock-body">
+                        <a href="javascript://" class="popup__alterBlock-item">
+                            <span class="icon-facebook"></span>
+                            <span>Facebook</span>
+                        </a>
+
+                        <a href="javascript://" class="popup__alterBlock-item">
+                            <span class="icon-google"></span>
+                            <span>Google</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup popup__reset1">
+                <a href="javascript://" class="popup__close" onclick="popupsClose();">
+                    <span class="icon-times-solid"></span>
+                </a>
+                <h2 class="popup__title popup__title--thin">Відновлення паролю</h2>
+                <span class="popup__subtitle">
+                    Введіть адресу електронної пошти, щоб отримати лист з інструкцією по відновленню пароля
+                </span>
+
+                <div class="popup__form">
+                    <div class="popup__inputBlock">
+                        <div class="popup__input popup__input--required">
+                            <span class="popup__input-label">Email</span>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <a href="javascript://" class="button popup__button" onclick="popupReset2();">Відправити</a>
+
+                    <div class="popup__row">
+                        <a href="javascript://" class="popup__link" onclick="popupLogin();">Я згадав свій пароль</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup popup__reset2">
+                <a href="javascript://" class="popup__close" onclick="popupsClose();">
+                    <span class="icon-times-solid"></span>
+                </a>
+
+                <div class="checkout__check">
+                    <span class="icon-check-rounded"></span>
+                </div>
+
+                <h2 class="popup__title popup__title--thin">На ваш email була <br> відправленна інструкція</h2>
+                <span class="popup__subtitle">
+                    На вашу адресу електронну пошту, був відправлений лист з інструкцією по відновленню пароля
+                </span>
+
+                <a href="javascript://" class="button popup__button" onclick="popupLogin();">Увійти</a>
+            </div>
+
+            <div class="popup popup__callback">
+                <a href="javascript://" class="popup__close" onclick="popupsClose();">
+                    <span class="icon-times-solid"></span>
+                </a>
+                <h2 class="popup__title popup__title--thin">Зворотній зв'язок</h2>
+
+                <div class="popup__form">
+                    <div class="popup__inputBlock">
+                        <div class="popup__input popup__input--required">
+                            <span class="popup__input-label">Ім’я</span>
+                            <input type="text">
+                        </div>
+
+                        <div class="popup__input popup__input--required">
+                            <span class="popup__input-label">Телефон</span>
+                            <input type="text">
+                        </div>
+
+                        <div class="popup__check">
+                            <input type="checkbox" name="callbackCheck" id="callbackCheck">
+                            <label for="callbackCheck">Я погоджуюся з користувацькою угодою и політикою конфіденційності</label>
+                        </div>
+                    </div>
+
+                    <a href="javascript://" class="button popup__button" onclick="popupsClose();">Заказати</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery -->
     <script src="./js/jquery-3.5.1.min.js"></script>
+    <!-- lightbox -->
+    <script src="./plugins/lightbox/lightbox.min.js"></script>
+    <!-- slick -->
     <script src="./plugins/slick/slick.min.js"></script>
+    <!-- select -->
     <script src="./plugins/select/jquery.selectric.js"></script>
+    <!-- index -->
     <script src="./js/index.js"></script>
 
 </body>

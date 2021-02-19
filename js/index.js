@@ -186,7 +186,7 @@ function slider(item) {
     });
 }
 
-$(document).ready(function(){
+$(document).ready(function () {
     slider(slider2);
 
     slider(slider3);
@@ -220,7 +220,7 @@ $(document).ready(function(){
 let filter = $('.filter');
 let filterBody = $('.filter__body')
 
-$('.filter__mobileLabel').click(function(){
+$('.filter__mobileLabel').click(function () {
     $('.filter__body').toggleClass('filter__body--show');
     $(document).mouseup(function (e) {
         if (!filter.is(e.target) && filter.has(e.target).length === 0) {
@@ -230,9 +230,77 @@ $('.filter__mobileLabel').click(function(){
 })
 
 
-$('.history__heading').click(function(){
+$('.history__heading').click(function () {
     $(this).parent().toggleClass('history__item--open');
-    $('.history__body-back').click(function(){
+    $('.history__body-back').click(function () {
         $('.history__item--open').removeClass('history__item--open');
     })
 })
+
+
+$('.slider__top').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider__bottom'
+});
+
+$('.slider__bottom').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.slider__top',
+    appendArrows: $('.slider__arrows'),
+    nextArrow: '<a href="javascript://" class="sliderBlock__arrow sliderBlock__arrow-next"><span class="icon-chevron"></span></a>',
+    prevArrow: '<a href="javascript://" class="sliderBlock__arrow sliderBlock__arrow-prev"><span class="icon-chevron"></span></a>',
+    responsive: [
+        {
+            breakpoint: 600,
+            settings: {
+                vertical: true,
+            }
+        },
+    ]
+});
+
+
+function popups() {
+    $('.popups').addClass('popups--open');
+    $('.content').addClass('content--fixed');
+}
+
+function popupsClose(){
+    $('.popup').hide();
+    $('.popups').removeClass('popups--open');
+    $('.content').removeClass('content--fixed');
+}
+
+function popupRegister(){
+    $('.popup').hide();
+    popups()
+    $('.popup__register').fadeIn();
+}
+
+function popupLogin(){
+    $('.popup').hide();
+    popups()
+    $('.popup__login').fadeIn();
+}
+
+function popupReset1(){
+    $('.popup').hide();
+    popups()
+    $('.popup__reset1').fadeIn();
+}
+
+function popupReset2(){
+    $('.popup').hide();
+    popups()
+    $('.popup__reset2').fadeIn();
+}
+
+function popupCallback(){
+    $('.popup').hide();
+    popups()
+    $('.popup__callback').fadeIn();
+}
